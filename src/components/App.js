@@ -14,4 +14,10 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+function mapStateToProps (calendar) {
+  return {
+    name: 'Julio'
+  }
+}
+
+export default connect(mapStateToProps)(App)
